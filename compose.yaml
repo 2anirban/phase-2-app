@@ -1,0 +1,20 @@
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8001:8000"
+    environment:
+      ENVIRONMENT: local-compose
+      APP_VERSION: compose-v1
+      OUTBOUND_TIMEOUT_S: "5"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/live', timeout=2)"
+      interval: 15s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped

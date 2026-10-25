@@ -1,0 +1,17 @@
+.git
+.github
+.aws
+.tools
+.env
+.env.*
+*.pem
+*.key
+.venv
+venv
+__pycache__
+.pytest_cache
+.ruff_cache
+*.pyc
+*.log
+tests
+docs

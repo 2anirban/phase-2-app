@@ -1,0 +1,29 @@
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local secrets, AWS profiles/tokens and downloaded installers
+.env
+.env.*
+!.env.example
+.aws/
+.tools/
+*.pem
+*.key
+
+# Generated build and diagnostic output
+build/
+dist/
+*.egg-info/
+*.log
+
+# Editor/OS files
+.idea/
+.DS_Store
+Thumbs.db

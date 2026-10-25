@@ -1,0 +1,4 @@
+-r requirements.txt
+# Versions already available in the global Python environment for step 3.
+pytest==8.4.2
+ruff==0.15.21

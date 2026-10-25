@@ -1,0 +1,7 @@
+# Install with: python -m pip install -r requirements.txt
+# These ranges match the guide; they are not a full dependency lock file.
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+httpx>=0.27,<1
+pydantic-settings>=2,<3
+pydantic>=2,<3
