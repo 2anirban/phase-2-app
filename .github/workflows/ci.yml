@@ -30,8 +30,8 @@ jobs:
       - name: Check formatting
         run: python -m ruff format --check app tests
 
-      - name: Run tests
-        run: python -m pytest -v
+      - name: Run tests and check coverage
+        run: python -m pytest -v --cov=app --cov-report=term-missing --cov-fail-under=80
 
       - name: Build Docker image
         run: docker build -t fde-api:ci .

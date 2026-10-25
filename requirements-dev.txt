@@ -1,4 +1,5 @@
 -r requirements.txt
-# Versions already available in the global Python environment for step 3.
+# Test and lint tools; includes the coverage plugin used by CI.
 pytest==8.4.2
 ruff==0.15.21
+pytest-cov==6.3.0
